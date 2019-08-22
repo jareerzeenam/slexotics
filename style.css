@@ -1,0 +1,109 @@
+/*TO BLOCK 000HOSTING LOGO*/
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, #ba7453, #d1a984);
+  z-index: -1;
+}
+
+nav {
+  background-color: #ffffff00;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh !important ;
+  color: white;
+  align-items: center;
+}
+
+#logo {
+  grid-column: 2/3;
+  font-size: 20px;
+}
+
+.birdicon {
+  justify-self: end;
+  width: 5%;
+}
+
+section {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-content: center;
+}
+.hero {
+  height: 60%;
+  width: 100%;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero::after {
+  content: "";
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+}
+
+.headline {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  font-size: 50px;
+  transform: translate(-20%, -70%);
+  color: white;
+  z-index: 3;
+}
+
+/* nav shadow  non*/
+.z-depth-1,
+nav,
+.card-panel,
+.card,
+.toast,
+.btn,
+.btn-large,
+.btn-small,
+.btn-floating,
+.dropdown-content,
+.collapsible,
+.sidenav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*  */
+
+/*MOBILE-START*/
+@media screen and (max-width: 960px) {
+  .headline {
+    font-size: 20px;
+    text-align: center;
+    left: 30%;
+  }
+
+  .birdicon {
+    width: 20%;
+  }
+}
